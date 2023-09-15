@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  scala:
+    image: alexsuf/scala
+    container_name: scala
+    restart: no
+    environment:
+      TZ: Europe/Moscow
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./app:/app
